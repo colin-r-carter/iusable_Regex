@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iusable REGEX</title>
+    <style>
+      .art {
+        background-color: dodgerblue;
+        border-radius: 3px;
+        padding: 3px;
+        margin: 0 2px 0 2px;
+        color: white;
+        text-decoration: none;
+      }
+      .bge {
+        background-color: firebrick;
+        border-radius: 3px;
+        padding: 3px;
+        margin: 0 2px 0 2px;
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="text" class="regius">
+      "Das Bundesgericht prüft von Amtes wegen und mit freier Kognition, ob ein
+      Rechtsmittel zulässig ist (Art. 29 Abs. 1 BGG; BGE 141 III 395 E. 2.1 [und
+      zum testen noch ohne BGE: 141 III 395 E. 2.1]). Die Beschwerde betrifft
+      eine Zivilsache (Art. 72 BGG) und richtet sich gegen den Endentscheid
+      (Art. 90 BGG) eines oberen kantonalen Gerichts, das als
+      Rechtsmittelinstanz entschieden hat (Art. 75 BGG). Der Streitwert liegt
+      über der in arbeitsrechtlichen Streitigkeiten erforderlichen Schwelle von
+      Fr. 15'000.-- (Art. 74 Abs. 1 lit. a BGG). Da auch die übrigen
+      Sachurteilsvoraussetzungen erfüllt sind, ist unter Vorbehalt hinreichender
+      Begründung (Art. 42 Abs. 2 und Art. 106 Abs. 2 BGG) auf die Beschwerde
+      einzutreten."
+      <br />
+      <br />
+      Ein paar weitere Tests: Art. 1 Abs. 1 Ziff. 1 lit. a TEST oder aber auch
+      Artikel 1 Absatz 1 Ziffer 1 Buchstabe a TEST
+      <br />
+      Grenzen des Tools sind momentan: Art. 1, 2 und 3 TEST, hier wird nur Art.
+      1 verlinkt.<br />
+      Gar nicht verlinkt werden Aufzählungen mit Abs. Ziff. oder Lit (siehe
+      oben): Art. 42 Abs. 2 und Art. 106 Abs. 2 BGG. Hier kann jedoch zu einem
+      späteren Zeitpunkt evtl. noch eine Funktion hinzugefügt werden, die das
+      Gesetz in der Regex optional macht und in den nächsten Matches nach dem
+      jeweiligen Gesetz sucht für eine korrekte Verlinkung.
+      <br />
+      Französisch:<br />
+      "L'art. 34 al. 1 Cst. garantit de manière générale et abstraite les droits
+      politiques, tant sur le plan fédéral que sur le plan cantonal ou
+      communal." - ATF 132 I 104
+      <br />
+      It: DTF 132 I 104
+    </p>
+    <script src="checker.js"></script>
+  </body>
+</html>
