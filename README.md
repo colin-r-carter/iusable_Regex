@@ -1,5 +1,7 @@
 # Simple JavaScript file to higlight Articles, Paragraphs and Federal court decisions in German, French an Italian
 
+_Warning:_ This script and the regular expressions are in active development and not finished yet.
+
 This simple script uses two regular expressions to extract information of the text and highlights them in either blue (law) or red (federal court decisions).
 I tried to make it work with German, French and Italian texts.
 
