@@ -35,13 +35,7 @@ function highlight(text) {
       return '<a class="bge" href="' + link + '">' + ref + '</a>';
 })
   }
-
-  function warnArt(){
-    if(!confirm("You have clicked on a highlighted Paragraph or Article which didn't match with 'Art.'. The link might therefore be broken (e.g. case of cantonal/communal laws). Continue anyway?")){
-      return false;
-    }
-  }
   
-  var text = document.querySelector('.regius').innerHTML;
-  var newhtml = highlight(text);
+  let text = document.querySelector('.regius').innerHTML;
+  let newhtml = highlight(text);
   document.querySelector('.regius').innerHTML = newhtml;
