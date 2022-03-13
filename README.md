@@ -1,4 +1,4 @@
-# Simple JavaScript file to higlight Articles, Paragraphs and Federal court decisions in German, French an Italian
+# Simple JavaScript file to higlight federal Articles, Paragraphs and Federal court decisions in German, French an Italian (🇨🇭)
 
 _Warning:_ This script and the regular expressions are in active development and not finished yet.
 
@@ -13,26 +13,28 @@ _Warning_ This tool does not work on every text. There are a few false tags and 
 
 ## RegexArt
 
-Matches:
-0: Matched String (Art. 1 Abs. 1 Ziff. 1 lit. a TEST)
-1: Artikel/Article/Articolo/Par (text) (Art)
-2: Artikel/Article/Articolo/Par (number) (1)
-3: Abs/Al/Cpv (text) (Abs)
-4: Abs/Al/Cpv (number) (1)
-5: Ziff./Ch./N. (text) (Ziff)
-6: Ziff./Ch./N. (number) (1)
-7: lit./let./lett. (text) (lit)
-8: lit./let./lett. (number) (a)
-9: Law (text) (TEST)
+| Array entry | Matches                                            |
+| ----------- | -------------------------------------------------- |
+| 0:          | Matched String (Art. 1 Abs. 1 Ziff. 1 lit. a TEST) |
+| 1:          | Artikel/Article/Articolo/Par (text) (Art)          |
+| 2:          | Artikel/Article/Articolo/Par (number) (1)          |
+| 3:          | Abs/Al/Cpv (text) (Abs)                            |
+| 4:          | Abs/Al/Cpv (number) (1)                            |
+| 5:          | Ziff./Ch./N. (text) (Ziff)                         |
+| 6:          | Ziff./Ch./N. (number) (1)                          |
+| 7:          | lit./let./lett. (text) (lit)                       |
+| 8:          | lit./let./lett. (number) (a)                       |
+| 9:          | Law (text) (TEST)                                  |
 
 ## RegexBGE
 
-Matches:
-0: Matched String (eg. "BGE 141 III 395")
-1: BGE/ATV/DTF (eg. "BGE")
-2: (number) (eg. "141")
-3: Field (number) (eg. "III")
-4: Pagenumber (number) (eg. 395)
+| Array entry | Matches                                |
+| ----------- | -------------------------------------- |
+| 0:          | Matched String (eg. "BGE 141 III 395") |
+| 1:          | BGE/ATV/DTF (eg. "BGE")                |
+| 2:          | (number) (eg. "141")                   |
+| 3:          | Field (number) (eg. "III")             |
+| 4:          | Pagenumber (number) (eg. 395)          |
 
 ## Limits
 
