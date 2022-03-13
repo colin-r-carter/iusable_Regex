@@ -9,7 +9,7 @@ Federal court decisions should be linked to automatically.
 Law articles use the link service from weblaw, as I have not worked on converting the articles into the fedlex.admin.ch link-schemata. PRs are welcome.
 And a huge thank you to weblaw.ch for making links.weblaw.ch openly available! In some situations there are even refined versions of the laws by weblaw.
 
-_Warning_ This tool does not work on every text. There are a few false tags and in some situations it won't highlight at all:
+_Warning_ This tool does not work on every text. There are a few false tags and in some situations it won't highlight at all.
 
 ## RegexArt
 
@@ -35,6 +35,17 @@ _Warning_ This tool does not work on every text. There are a few false tags and 
 | 2:          | (number) (eg. "141")                   |
 | 3:          | Field (number) (eg. "III")             |
 | 4:          | Pagenumber (number) (eg. 395)          |
+
+## How to use
+
+The script highlighty every match in `.regius` .
+
+1. download 'checker.js'
+2. add 'checker.js' to your html-file with `<script src="path/to/checker.js">`
+3. add the class `regius` to the element you would like to highlight.
+4. reload the page.
+
+Check index.html for an example.
 
 ## Limits
 
