@@ -40,7 +40,7 @@ _Warning_ This tool does not work on every text. There are a few false tags and 
 
 The script highlighty every match in `.regius` .
 
-1. download 'checker.js'
+1. download `checker.js`
 2. add 'checker.js' to your html-file with `<script src="path/to/checker.js">`
 3. add the class `regius` to the element you would like to highlight.
 4. reload the page.
