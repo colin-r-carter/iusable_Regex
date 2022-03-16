@@ -36,6 +36,14 @@ _Warning_ This tool does not work on every text. There are a few false tags and 
 | 3:          | Field (number) (eg. "III")             |
 | 4:          | Pagenumber (number) (eg. 395)          |
 
+## RegexBGer
+
+| Array entry | Matches                              |
+| ----------- | ------------------------------------ |
+| 0:          | Number of department (eg. "1")       |
+| 1:          | Letter for the procedures (eg. "A")  |
+| 2:          | Consecutive numbering (eg. "1/2022") |
+
 ## How to use
 
 The script highlighty every match in `.regius` .

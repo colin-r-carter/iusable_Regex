@@ -5,7 +5,7 @@ const regexArt = /(§+|Art|art|Artikel|article|Article|articolo|Articolo|Paragra
 const regexBGE = /(?:(?:(BGE|ATF|DTF)\.?\s*)?(\d+(?:\w\b))\s*M{0,4}(IX|IV|V?I{0,3})\s*(\d+(?:\w\b)))/gi
 
 //Regex for BGer reference Number (Geschäftsnr./Num. référence/N. riferimento)
-const BGer = /(\d+)([A-Z])_(\d+)\/(\d+)/g
+const regexBGer = /(\d+)([A-Z])_(\d+\/\d+)/g
 
 function highlight(text) {
     //Highlight Law-Art. with <a>...</a>
@@ -19,8 +19,7 @@ function highlight(text) {
         });
 
     // Highlight reference Numbers
-    text = text.replace(BGer, function(ref) {
-      // let res = [...ref.matchAll(regexArt)];
+    text = text.replace(regexBGer, function(ref) {
         return '<a class="art" href="https://links.weblaw.ch/' + ref  +'">' + ref + '</a>'; //Todo convert link to admin.ch link
     });
 
