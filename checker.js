@@ -20,6 +20,7 @@ function highlight(text) {
 
     // Highlight reference Numbers
     text = text.replace(regexBGer, function(ref) {
+        // let response = [...ref.matchAll(regexBGer)]; //if array of matches needed
         return '<a class="art" href="https://links.weblaw.ch/' + ref  +'">' + ref + '</a>'; //Todo convert link to admin.ch link
     });
 
