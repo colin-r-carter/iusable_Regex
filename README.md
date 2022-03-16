@@ -40,7 +40,7 @@ _Warning_ This tool does not work on every text. There are a few false tags and 
 
 | Array entry | Matches                              |
 | ----------- | ------------------------------------ |
-| 0:          | Matched String (eg. "A1_1/20222")    |
+| 0:          | Matched String (eg. "5A_1000/2020")  |
 | 1:          | Number of department (eg. "1")       |
 | 2:          | Letter for the procedures (eg. "A")  |
 | 3:          | Consecutive numbering (eg. "1/2022") |
