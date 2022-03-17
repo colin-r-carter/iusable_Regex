@@ -1,5 +1,5 @@
 //Regex for Articles&Paragraphs in DE, FR and IT
-const regexArt = /(§+|Art|art|Artikel|article|Article|articolo|Articolo|Paragraph|Par|par)\.?\s*(\d+(?:\w\b)?)\s*(?:(Abs|Absatz|Al|al|Cpv|cpv)\.?\s*(\d+(?:\w\b)?))?\s*(?:(Ziff|Ziffer|Ch|ch|N|n)\.?\s*(\d+(?:\w\b)?))?\s*(?:(Lit|lit|Buchstabe|Bchst|Let|let|Lett|lett)\.?\s*([A-Za-z]?))?.{0,10}?(\b[A-Z][A-Za-z]*[A-Za-z])/g
+const regexArt = /(§+|Art|art|Artikel|article|Article|articolo|Articolo|Paragraph|Par|par)\.?\s*(\d+(?:\w\b)?(?:.{0,7})?)\s*(?:(Abs|Absatz|Al|al|Cpv|cpv)\.?\s*(\d+(?:\w\b)?))?\s*(?:(Ziff|Ziffer|Ch|ch|N|n)\.?\s*(\d+(?:\w\b)?))?\s*(?:(Lit|lit|Buchstabe|Bchst|Let|let|Lett|lett)\.?\s*([A-Za-z]?))?.{0,10}?(\b[A-Z][A-Za-z]*[A-Za-z])/g
 
 //Regex for BGE/ATF/DTF (DE/FR/IT)
 const regexBGE = /(?:(?:(BGE|ATF|DTF)\.?\s*)?(\d+(?:\w\b))\s*M{0,4}(IX|IV|V?I{0,3})\s*(\d+(?:\w\b)))/gi
@@ -21,7 +21,7 @@ function highlight(text) {
     // Highlight reference Numbers
     text = text.replace(regexBGer, function(ref) {
         // let response = [...ref.matchAll(regexBGer)]; //if array of matches needed
-        return '<a class="art" href="https://links.weblaw.ch/' + ref  +'">' + ref + '</a>'; //Todo convert link to admin.ch link
+        return '<a class="bge" href="https://links.weblaw.ch/' + ref  +'">' + ref + '</a>'; //Todo convert link to admin.ch link
     });
 
     //Highlight BGEs with <a>...</a>
