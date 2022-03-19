@@ -46,6 +46,9 @@ function highlight(text) {
 })
   }
   
+  // The following part ist only for the example html file. It will highlight every match in the html-elemtns with a .regius class. 
+  // To highlight every match on a whole webpage you could use the body tag so instead of .regius just body. This will however highlight everything (so if there's a match in a navbar for example that will be highlighted as well)
+  // This could break websites, if used. Recommended way is therefore a queryselector (either ID or Class).
   let text = document.querySelector('.regius').innerHTML;
   let newhtml = highlight(text);
   document.querySelector('.regius').innerHTML = newhtml;
