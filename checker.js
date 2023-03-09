@@ -2,7 +2,7 @@
 const regexArt = /(§+|Art|art|Artikel|article|Article|articolo|Articolo|Paragraph|Par|par)\.?\s*(\d+(?:\w\b)?(?:.{0,7})?)\s*(?:(Abs|Absatz|Al|al|Cpv|cpv)\.?\s*(\d+(?:\w\b)?))?\s*(?:(Ziff|Ziffer|Ch|ch|N|n)\.?\s*(\d+(?:\w\b)?))?\s*(?:(Lit|lit|Buchstabe|Bchst|Let|let|Lett|lett)\.?\s*([A-Za-z]?))?.{0,10}?(\b[A-Z][A-Za-z]*[A-Za-z])(?=\s)/g
 
 //Regex for BGE/ATF/DTF (DE/FR/IT)
-const regexBGE = /(?:(?:(BGE|ATF|DTF)\.?\s*)?(\d+(?:\w\b))\s*M{0,4}(IX|IV|V?I{1,3})+\s*(\d+(?:\w\b)))/gi
+const regexBGE = /(?:(?:(BGE|ATF|DTF)\.?\s*)?(\d+(?:\w\b)?)\s*M{0,4}(IV|V|I{1,3}[ab]?)+\s*(\d+(?:\w\b)?))/gi
 
 //Regex for BGer reference Number (Geschäftsnr./Num. référence/N. riferimento)
 const regexBGer = /(\d+)([A-Z])_(\d+\/\d+)/g
