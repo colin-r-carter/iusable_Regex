@@ -61,9 +61,12 @@ Check index.html for an example.
 - Does not work with enumerations of articles of law
 - The law-regex returns any String with a first capital letter as a Law. It does not check, wether the law exists or not.
 
+## 🚧 Work in Progress (coming soon):
+- I am currently extending the regex with all official abrevs. Will be available soon.
+- Will switch from the HTML-Demo to a more (i)usable format (library).
+
 ## To Do
 
 - I would like to package this script into a simple Browser-Extension, so laws and federal court decisions would be highlighted and linked to on every pageload.
 - Instead of linking to the ressources a tooltip could be displayed. Simple version would be by embedding an iframe, more complex solution would be to access an API (to my knowledge there's no open API for laws and federal court decisions, if there is, please let me know 😃). Maybe SPARQL can be used, or at least used to get scrapable documents to generate a (local) API for single norms...
 - Refine and improve the regular expressions.
-- In a next step it could be nice to check the possibility of a NER-model (with TensorFlowJs for example) to circumvent the above mentioned limitations.
